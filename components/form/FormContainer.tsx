@@ -6,7 +6,6 @@ import { type actionFunction } from "@/utils/types";
 
 const initialState = {
   message: "",
-  isError: false,
 };
 
 const FormContainer = ({
@@ -23,7 +22,6 @@ const FormContainer = ({
     if (state.message) {
       toast({
         description: state.message,
-        variant: state.isError ? "destructive" : "default",
       });
     }
   }, [state]);
