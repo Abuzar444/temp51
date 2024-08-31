@@ -85,7 +85,7 @@ export const fetchProfile = async () => {
 export const updateProfileAction = async (
   prevState: any,
   formData: FormData
-): Promise<{ message: string }> => {
+) => {
   const user = await getAuthUser();
   try {
     const rawData = Object.fromEntries(formData);
